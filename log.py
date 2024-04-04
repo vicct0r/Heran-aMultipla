@@ -28,12 +28,4 @@ class LogPrintMixin(Log):
     def _log(self, msg):
         print(f'{msg} ({self.__class__.__name__})')
 
-
-if __name__ == '__main__':
-    lp = LogPrintMixin()
-    lp.log_success('mensagem com sucesso.')
-    lp.log_error('mensagem com erro.')
-    lf = LogFileMixin()
-    lf.log_error('mensagem com erro.')
-    lf.log_success('mensagem com sucesso.')
     
